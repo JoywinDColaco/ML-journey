@@ -1,1 +1,16 @@
+Advise:
+1. Its a good practice to glance at the dataset before starting your analysis. We can spot some direct patterns which can be treated as the start point of our analysis.
+2. When looking at dataset's columns, always look at it with atleast one row entry. It gives one an idea of the entries of the column containing confusng column names.
+3. Always do the following pre-processing checks:
+   3.1 Check for null values in columns (if total no. of missing column entries <<< total no. of rows then drop those rows)
+   3.2 Check for duplicate rows (remove all duplicates)
 
+Compounded-Code syntax simplification:
+1. credits.head(1)[cast].values
+* credits.head(1) returns the 1st row from top
+* ...[cast] returns a preview of the column (values, data types)
+* ...values returns only the values of the column (which is a dictionary)
+
+Questions to think about
+1. Why do the numerical columns affect our analysis?
+2. How will we add 'release date' in our analysis?
