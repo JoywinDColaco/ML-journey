@@ -1,5 +1,5 @@
 # ML-journey
-Contains all files created during my ML Journey
+Contains all files created during my ML learning journey
 
 ## Roadmap Followed
 #### Step 1: Creating two ML projects clones from YouTube Tutorials
