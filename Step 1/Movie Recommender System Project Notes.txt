@@ -11,9 +11,18 @@ Compounded-Code syntax simplification:
 * ...[cast] returns a preview of the column (values, data types)
 * ...values returns only the values of the column (which is a dictionary)
 
- 2. movies.isnull().sum
+2. movies.isnull().sum
 * movies.isnull() returns the rows cntaining at least one void column entry
 * ...sum returns total no. of rows cntaining at least one void column entry
+
+Extra:
+1. What does 'inplace = True' in dropna() do?
+When value is true, the entries are removed from the current dataframe.
+When false, a copy of the dataframe is created and the entries are removed from the compied dataframe.
+
+2. Why use 'movies.iloc[0]' and not 'movies[0]?
+movies.iloc[0] refers to the first row of the DataFrame based on its position, regardless of the index labels. It always refers to the first row, even if the DataFrame has custom indices or a non-sequential index.
+This syntax attempts to access a column in the DataFrame, where 0 is treated as the label of the column, not its position. It will raise a KeyError if there isn't a column explicitly named 0.
 
 Questions to think about
 1. Why do the numerical columns affect our analysis?
