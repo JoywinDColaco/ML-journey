@@ -1,9 +1,10 @@
 Advise:
 1. Its a good practice to glance at the dataset before starting your analysis. We can spot some direct patterns which can be treated as the start point of our analysis.
 2. When looking at dataset's columns, always look at it with atleast one row entry. It gives one an idea of the entries of the column containing confusng column names.
-3. Always do the following pre-processing checks:
-   3.1 Check for null values in columns (if total no. of missing column entries <<< total no. of rows then drop those rows)
-   3.2 Check for duplicate rows (remove all duplicates)
+3. In order to avoid unnecessary cross-referencing in the future, it is better to join all the tables.
+4. Always do the following pre-processing checks:
+   4.1 Check for null values in columns (if total no. of missing column entries <<< total no. of rows then drop those rows)
+   4.2 Check for duplicate rows (remove all duplicates)
 
 Compounded-Code syntax simplification:
 1. credits.head(1)[cast].values
