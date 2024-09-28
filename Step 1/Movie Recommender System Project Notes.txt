@@ -32,6 +32,16 @@ The apply function in pandas allows you to apply a function along an axis of the
 4. What is the axis parameter for a dataframe?
 The axis parameter tells whether the operations are to be applied on rows (axis = 0) or columns (axis = 1) of a dataframe.
 
+5. What is the difference between eval() and literal_eval()?
+Unlike eval(), literal_eval() is restricted to literals and does not allow for function calls or variable assignments.
+
+6. Why did we get the Type Error - string indices must be integers?
+We get the "TypeError: string indices must be integers" error when we try to access a character using its string value rather the index number.
+eg. 
+greet = "Hello World!"
+print(greet["H"])
+In our code, the role of H in the second line of code is being played by 'name' from the helper function convert.
+
 Questions to think about
 1. Why do the numerical columns affect our analysis?
 2. How will we add 'release date' in our analysis?
