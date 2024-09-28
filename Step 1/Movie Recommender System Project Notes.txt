@@ -12,9 +12,10 @@ Compounded-Code syntax simplification:
 * ...[cast] returns a preview of the column (values, data types)
 * ...values returns only the values of the column (which is a dictionary)
 
-2. movies.isnull().sum
+2. movies.isnull().sum()
 * movies.isnull() returns the dataframe with True (if null value is present) / False (otherwise) values placed in place of the dataframe values.
-* ...sum returns total no. of True values for each column.
+* ...sum returns a similar output as above but without a proper table structure.
+* ...() returns total no. of True values for each column.
 
 Extra:
 1. What does 'inplace = True' in dropna() do?
