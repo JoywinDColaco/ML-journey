@@ -26,6 +26,12 @@ When false, a copy of the dataframe is created and the entries are removed from 
 movies.iloc[0] refers to the first row of the DataFrame based on its position, regardless of the index labels. It always refers to the first row, even if the DataFrame has custom indices or a non-sequential index.
 This syntax attempts to access a column in the DataFrame, where 0 is treated as the label of the column, not its position. It will raise a KeyError if there isn't a column explicitly named 0.
 
+3. How does the apply() function work?
+The apply function in pandas allows you to apply a function along an axis of the DataFrame or on values of Series. By default, the axis parameter is set to 0. Note that this function does NOT make changes to the original DataFrame object.
+
+4. What is the axis parameter for a dataframe?
+The axis parameter tells whether the operations are to be applied on rows (axis = 0) or columns (axis = 1) of a dataframe.
+
 Questions to think about
 1. Why do the numerical columns affect our analysis?
 2. How will we add 'release date' in our analysis?
