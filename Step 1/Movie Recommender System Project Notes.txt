@@ -13,8 +13,8 @@ Compounded-Code syntax simplification:
 * ...values returns only the values of the column (which is a dictionary)
 
 2. movies.isnull().sum
-* movies.isnull() returns the rows cntaining at least one void column entry
-* ...sum returns total no. of rows cntaining at least one void column entry
+* movies.isnull() returns the dataframe with True (if null value is present) / False (otherwise) values placed in place of the dataframe values.
+* ...sum returns total no. of True values for each column.
 
 Extra:
 1. What does 'inplace = True' in dropna() do?
